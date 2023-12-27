@@ -1,0 +1,225 @@
+/* CSS Reset  */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Navigation Bar  */
+#navbar{
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    top: 0px;
+    position: relative;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    top: 0px;
+    left: 0px;
+}
+
+/* Navigation Bar: Logo and image  */
+#logo{
+    margin: 27px 35px;
+}
+
+#logo img{
+    margin: -12px -8px;
+    height: 70px;
+}
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    /* color: white; */
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+/* home Section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 200px;
+    height: 500px;
+}
+
+#home::before{
+    background: url('../image/food\ Main.jpg') no-repeat center center/cover;
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    height: 90%;
+    z-index: -1;
+    opacity: 0.92;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    text-align: 1..5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* services Section  */
+#services{
+    margin: 26px;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#services .box{
+    border: 2px solid red;
+    border: 2px solid red;
+    padding: 34px;
+    margin: 6px;
+    border-radius: 25px;
+    background-color: #e3e3e3;
+
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Client section  */
+
+#client-section{
+    height: 344px;
+}
+#client-section::before{
+    content: "";
+    position:absolute;
+    background: url('../image/bg.jpg') center;
+    width: 100%;
+    height: 40%;
+    z-index: -1;
+    opacity: 0.4;
+    
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+     height: 100px;
+}
+
+/* Contact section */
+
+#contact{
+    position:relative;
+}
+#contact::before{
+    content: "";
+    position:absolute;
+    background: url('../image/contactUs.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 34px;
+
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 45%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+
+/* Utility Classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
